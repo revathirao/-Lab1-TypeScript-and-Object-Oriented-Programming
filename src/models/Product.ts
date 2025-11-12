@@ -1,4 +1,4 @@
-class Products{
+export class Products{
 
     sku: string;
     name: string;
@@ -18,3 +18,7 @@ class Products{
         return this.price + this.price  * texRate;
     }
 }
+
+// Exporting 
+// export Products ;
+// export default Products;

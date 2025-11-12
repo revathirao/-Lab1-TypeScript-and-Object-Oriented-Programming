@@ -1,3 +1,5 @@
+import { Products } from "../models/Product"
+
 class PhysicalProduct extends Products{
     weight:number;
 
@@ -8,8 +10,15 @@ class PhysicalProduct extends Products{
     // Override method to include 10% tax
   getPriceWithTax():number{
 
-    const taxRate
+    const taxRate = 0.1;// 10% tax rate
+    const basePrice = super.getPriceWithTax(); // Calls the parent's getPriceWithTax 
 
+    return  basePrice * (1 + taxRate);
+  }
+
+   // Getter method to return the formatted weight in kilograms 
+  get formattedWeight(): string {
+    return  `${this.weight} kg`
   }
 
 
