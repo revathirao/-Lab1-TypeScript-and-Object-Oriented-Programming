@@ -1,6 +1,6 @@
 import { Products } from "../models/Product"
 
-class PhysicalProduct extends Products{
+ export class PhysicalProduct extends Products{
     weight:number;
 
     constructor(sku: string, name: string, price: number,  weight:number){

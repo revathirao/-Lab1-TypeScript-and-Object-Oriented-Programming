@@ -2,7 +2,7 @@
 // import { Products } from './Products.js'; 
 import { Products } from "../models/Product"
 
-class DigitalProduct extends Products{
+ export class DigitalProduct extends Products{
    fileSize: number;
    
    constructor(sku: string, name: string, price: number,  fileSize:number){
