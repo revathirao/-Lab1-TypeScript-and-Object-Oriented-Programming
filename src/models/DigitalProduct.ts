@@ -1,0 +1,3 @@
+class DigitalProduct extends Produts{
+    
+}
