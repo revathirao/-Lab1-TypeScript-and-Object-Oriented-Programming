@@ -1,24 +1,25 @@
-export class Products{
+export class Product {
 
     sku: string;
     name: string;
     price: number;
 
-    constructor(sku: string, name: string, price: number){
-        this.sku= sku
-        this.name= name
-        this.price= price
+    constructor(sku: string, name: string, price: number) {
+        this.sku = sku
+        this.name = name
+        this.price = price
     }
 
-    displayDetails():String{
+    displayDetails(): String {
         return `${this.sku} ${this.name} costs $${this.price}.`;
-    } 
+    }
 
-    getPriceWithTax(texRate:number):number{
-        return this.price + this.price  * texRate;
+    getPriceWithTax(texRate: number): number {
+        return this.price + this.price * texRate;
+    }
+    // Default version — subclasses override this
+    getExtraInfo(): string {
+        return "";
     }
 }
 
-// Exporting 
-// export Products ;
-// export default Products;
