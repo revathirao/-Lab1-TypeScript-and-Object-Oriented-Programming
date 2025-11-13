@@ -6,4 +6,3 @@ export declare class DigitalProduct extends Product {
     get formattedFileSize(): string;
     getExtraInfo(): string;
 }
-//# sourceMappingURL=DigitalProduct.d.ts.map

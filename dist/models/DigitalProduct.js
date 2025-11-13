@@ -1,6 +1,5 @@
 // import { Product } from './Products.js'; 
-import { Product } from "./Product";
-export class DigitalProduct extends Product {
+import { Product } from "./Product.js";export class DigitalProduct extends Product {
     fileSize;
     constructor(sku, name, price, fileSize) {
         super(sku, name, price);
